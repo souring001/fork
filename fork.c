@@ -1,3 +1,12 @@
+
+/*
+        入力したコマンドを実行する
+	exit, ctl+Dで終了
+	多段パイプ可能
+	cdコマンドも実行可能
+	ヒストリ機能(history, !!, !5)もある
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -220,13 +229,5 @@ int main(void){
  
 	p_fork(pflag, 0);
 
-
-        /*
-          入力したコマンドを実行する
-	exit, ctl+Dで終了
-	多段パイプ可能
-	cdコマンドも実行可能
-	ヒストリ機能(history, !!, !5)もある
-          */
     }
 }
